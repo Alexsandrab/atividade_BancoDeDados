@@ -1,0 +1,23 @@
+[{
+    "instituicao": {
+        "nomeInstituicao": "Banco Fortuna"
+    },
+
+    "cliente": {
+        "nome": "String",
+        "cpf": "String",
+        "agencia": "String",
+        "nDaConta": "String"
+    },
+    "consultaSaldo":{
+        "temSaldo": "boolean"
+    },
+    "senha":{
+        "senhaCaixa": "boolean"
+    },
+    "mostrandoSaldo":{
+        "status": "String"
+    }
+   
+}
+]
