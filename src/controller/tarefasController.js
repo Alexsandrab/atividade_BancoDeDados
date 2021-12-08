@@ -10,6 +10,19 @@ const getAll = (req, res) => {
     })
 };
 
+const postTarefa = (req, res) =>{
+    console.log(req.body)
+    let tarefa = new tarefas(req.body)
+
+    tarefa.save(function (err){
+        if(err){
+            res.status(500).send({message: err.message})
+        }
+        res.status(201).send(tarefa.toJSON())
+    })
+};
+
 module.exports = {
-    getAll
+    getAll,
+    postTarefa
 }
